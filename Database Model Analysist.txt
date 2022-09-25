@@ -1,0 +1,93 @@
+User_Info
+	ID_user
+		ID_user
+		First_Name
+		Last_Name
+		Birthday
+		Address
+		Contact
+		Gender
+		Email
+		Latitude
+		Longitude
+		Valid_ID_URL
+		Profile_URL
+		Current_Location_Address
+		DirectionFront
+		IDType
+		Type = User||Firefighter||Police||Ambulance
+		Status
+
+
+
+Emergency_Pending
+	ID_emergency
+		ID_emergency
+		ID_user
+		First_Name
+		Last_Name
+		Birthday
+		Contact_No
+		Address
+		Current_Location_Address
+		Latitude
+		Longitude
+		Type_Rescue
+		Status	
+		Status_Type_Rescue
+		Status_ID_user
+		
+OTW_Info
+	ID_otw
+		ID_otw
+		ID_emergency
+		ID_user
+		ID_response
+		First_Name
+		Last_Name
+		Birthday
+		Contact_No
+		Address
+		Current_Location_Address
+		Latitude
+		Longitude
+		Type_Rescue
+
+Submit_Report_Info
+	ID_report
+		Responder_Name
+		ID_report
+		ID_user
+		ID_other
+		ID_otw
+		ID_emergency
+		Latitude
+		Longitude
+		Type_Rescue
+		Message_Report
+		Subject
+		Victim_Fullname
+		Date_Report
+		Time_Report
+
+Message_Info
+	ID_user || ID_other
+		ID_other
+			ID_message
+				ID_message
+				Sender => ID_user || ID_other
+				Receiver => ID_user || ID_other
+				Message
+				Message_Time	
+				Message_Date
+				Message_Seen
+				Picture_URL
+		
+		
+		
+Emergency_Contact
+	ID_user
+		ID_contact
+			ID_contact
+			Contact_Number
+			Name
