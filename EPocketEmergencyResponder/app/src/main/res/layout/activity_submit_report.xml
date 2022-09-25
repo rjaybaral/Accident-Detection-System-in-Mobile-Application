@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/s4"
+    tools:context=".SubmitReportActivity">
+
+<!--    <ImageView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:adjustViewBounds="true"-->
+<!--        android:src="@drawable/below_design_cyan" -->
+<!--        app:tint="@color/s1"/>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/s4"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardBackgroundColor="@color/s4"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/back_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="7dp"
+                    android:src="@drawable/arrow_back"
+                    app:tint="@color/s1"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/poppins_bold"
+                android:maxLines="1"
+                android:text="Report"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#535353" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never"
+            android:scrollbarThumbVertical="@null">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginRight="25dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:maxLines="1"
+                        android:text="FOR"
+                        android:textColor="@color/s5"
+                        android:textSize="13dp" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_gray_round_report"
+                        android:enabled="false"
+                        android:fontFamily="@font/poppins_bold"
+                        android:inputType="textCapWords"
+                        android:maxLines="1"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:text="Ride Safe Administration"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="25dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:maxLines="1"
+                        android:text="FROM"
+                        android:textColor="@color/s5"
+                        android:textSize="13dp" />
+
+                    <EditText
+                        android:id="@+id/from_fullname_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_gray_round_report"
+                        android:fontFamily="@font/poppins_bold"
+                        android:inputType="textCapWords"
+                        android:maxLines="1"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:text=""
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="25dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:maxLines="1"
+                        android:text="VICTIM"
+                        android:textColor="@color/s5"
+                        android:textSize="13dp" />
+
+                    <EditText
+                        android:id="@+id/victim_fullname_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_gray_round_report"
+                        android:fontFamily="@font/poppins_bold"
+                        android:inputType="textCapWords"
+                        android:maxLines="1"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:text=""
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="25dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:maxLines="1"
+                        android:text="SUBJECT"
+                        android:textColor="@color/s5"
+                        android:textSize="13dp" />
+
+                    <EditText
+                        android:id="@+id/subject_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_gray_round_report"
+                        android:fontFamily="@font/poppins_bold"
+                        android:inputType="textCapWords"
+                        android:maxLines="1"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:text=""
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginBottom="25dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_bold"
+                        android:maxLines="1"
+                        android:text="REPORT MESSAGE"
+                        android:textColor="@color/s5"
+                        android:textSize="13dp" />
+
+                    <EditText
+                        android:id="@+id/message_report_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:gravity="top"
+                        android:background="@drawable/bg_gray_round_report"
+                        android:fontFamily="@font/poppins_bold"
+                        android:inputType="text|textMultiLine"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:textSize="14sp" />
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:paddingLeft="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="5dp"
+                    android:paddingRight="30dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/bg_primary_color_round"
+                    android:letterSpacing="0.02"
+                    android:text="Submit Report"
+                    android:id="@+id/submitBtn"
+                    android:textColor="@color/s1"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.epocketemergency">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EPocketEmergency"
+        tools:targetApi="31">
+        <activity
+            android:name=".ContactListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EPocketEmergency.NoActionBar2"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:name=".WaitingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EPocketEmergency.NoActionBar2"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".ProfileSpecificUserActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EPocketEmergency.NoActionBar2GrayLight"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MessageActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EPocketEmergency.NoActionBar2"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".RescuerActionWithMapActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EPocketEmergency.NoActionBar2"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".ProfilePictureShowActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EPocketEmergency.NoActionBarBlack"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".ProfileWithEditActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EPocketEmergency.NoActionBar2GrayLight"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".SubmitIDActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EPocketEmergency.NoActionBarPinkDown"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".FirefighterOTWActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EPocketEmergency.NoActionBarPinkDown"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".AmbulanceOTWActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EPocketEmergency.NoActionBarPinkDown"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".PoliceOTWActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EPocketEmergency.NoActionBarPinkDown"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".ChooseRescuerActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EPocketEmergency.NoActionBarPinkDown"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".ShowMapLocationUserActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EPocketEmergency.NoActionBar2"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".StarterPack.ChooseStartActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EPocketEmergency.NoActionBarPink"
+            tools:ignore="LockedOrientationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Authentication.RegisterActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EPocketEmergency.NoActionBar2"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Authentication.LoginActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EPocketEmergency.NoActionBarPink"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <!--
+             TODO: Before you run your application, you need a Google Maps API key.
+
+             To get one, follow the directions here:
+
+                https://developers.google.com/maps/documentation/android-sdk/get-api-key
+
+             Once you have your API key (it starts with "AIza"), define a new property in your
+             project's local.properties file (e.g. MAPS_API_KEY=Aiza...), and replace the
+             "YOUR_API_KEY" string in this file with "${MAPS_API_KEY}".
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyChSGqUCRyZkl8K3b_7NJav15XzArEx2OQ" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:exported="false"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EPocketEmergency.NoActionBarPinkDown"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.EPocketEmergency.NoActionBar2" />
+
+        <service
+            android:name=".LocationService"
+            android:enabled="true"
+            android:exported="false" />
+    </application>
+
+</manifest>

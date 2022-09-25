@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/drawable-v24/bg_gray_round.xml" value="0.175" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/drawable/back_btn_blue.xml" value="0.161" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/drawable/bg_dialog_edit.xml" value="0.16" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/drawable/bg_gray_round_10.xml" value="0.132" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/drawable/bg_gray_round_5.xml" value="0.132" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/drawable/bg_light_gray_round_10.xml" value="0.132" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/drawable/bg_pink_round_5.xml" value="0.16" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/drawable/bg_primary_color_round.xml" value="0.175" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/drawable/bg_red_notif.xml" value="0.16" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/drawable/bg_transparent_for_map.xml" value="0.161" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/drawable/call_icon_blue.xml" value="0.16" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/drawable/message_right_chat.xml" value="0.16" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/drawable/send_icon.xml" value="0.16" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/font/abeezee.xml" value="0.234375" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/layout/activity_ambulance_otwactivity.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/layout/activity_choose_rescuer.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/layout/activity_choose_start.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/layout/activity_firefighter_otwactivity.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/layout/activity_maps.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/layout/activity_message.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/layout/activity_police_otwactivity.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/layout/activity_profile_picture_show.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/layout/activity_profile_specific_user.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/layout/activity_profile_with_edit.xml" value="0.33" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/layout/activity_register.xml" value="0.33" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/layout/activity_rescuer_action_with_map.xml" value="0.33" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/layout/activity_show_map_location_user.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/layout/activity_submit_idactivity.xml" value="0.25" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/layout/content_message_left.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/layout/content_message_right.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/layout/dialog_pending.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/layout/dialog_status_block.xml" value="0.22" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/layout/dialog_status_pending.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/layout/dialog_success_submit_id.xml" value="0.203125" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/layout/headerlayout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/layout/loading_dialog.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/AndroidStudioProjects/EPocketEmergency/app/src/main/res/menu/menu_item1.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/Desktop/Accident Detection System/EPocketEmergency/app/src/main/res/drawable/bg_design_dialog_edit.xml" value="0.184" />
+        <entry key="..\:/Users/marga/Desktop/Accident Detection System/EPocketEmergency/app/src/main/res/drawable/calendar_icon.xml" value="0.161" />
+        <entry key="..\:/Users/marga/Desktop/Accident Detection System/EPocketEmergency/app/src/main/res/layout/activity_choose_start.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/Desktop/Accident Detection System/EPocketEmergency/app/src/main/res/layout/activity_contact_list.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/Desktop/Accident Detection System/EPocketEmergency/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/Desktop/Accident Detection System/EPocketEmergency/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/Desktop/Accident Detection System/EPocketEmergency/app/src/main/res/layout/activity_profile_specific_user.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/Desktop/Accident Detection System/EPocketEmergency/app/src/main/res/layout/activity_profile_with_edit.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/Desktop/Accident Detection System/EPocketEmergency/app/src/main/res/layout/activity_register.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/Desktop/Accident Detection System/EPocketEmergency/app/src/main/res/layout/activity_rescuer_action_with_map.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/Desktop/Accident Detection System/EPocketEmergency/app/src/main/res/layout/activity_waiting.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/Desktop/Accident Detection System/EPocketEmergency/app/src/main/res/layout/dialog_add_emergency.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/Desktop/Accident Detection System/EPocketEmergency/app/src/main/res/layout/dialog_delete_contact.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/Desktop/Accident Detection System/EPocketEmergency/app/src/main/res/layout/dialog_pending.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/Desktop/Accident Detection System/EPocketEmergency/app/src/main/res/layout/headerlayout.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/marga/Desktop/Accident Detection System/EPocketEmergency/app/src/main/res/layout/layout_contact_list.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

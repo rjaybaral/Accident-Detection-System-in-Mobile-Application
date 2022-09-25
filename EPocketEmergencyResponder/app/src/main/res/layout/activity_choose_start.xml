@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/s4"
+    tools:context=".StarterPack.ChooseStartActivity">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/bground_top_image_cyan"
+        app:tint="@color/s1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginRight="75dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/scooter" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/poppins_bold"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Ride Safe!"
+            android:textColor="@color/s1"
+            android:textSize="45dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="-10dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Accident Detection System"
+            android:textColor="#9C6B21"
+            android:textSize="15dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/registerBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/bg_primary_color_round"
+            android:letterSpacing="0.02"
+            android:text="Create Account"
+            android:textColor="@color/s1"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/bg_primary_color_round"
+            android:letterSpacing="0.02"
+            android:text="Login"
+            android:textColor="@color/s1"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</RelativeLayout>

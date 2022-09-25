@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dialog_edit">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/question_mark_icon"
+            />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/poppins"
+            android:gravity="center_horizontal"
+            android:text="Are you sure you want to delete this emergency contact?"
+            android:textSize="16.5sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="15dp"
+            android:background="#DADADA" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/cancelButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center_horizontal"
+                android:padding="15dp"
+                android:text="Cancel"
+                android:textColor="#ACACAC"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#DADADA" />
+
+            <TextView
+                android:id="@+id/yesButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:fontFamily="@font/poppins_bold"
+                android:gravity="center_horizontal"
+                android:padding="15dp"
+                android:text="Yes"
+                android:textColor="@color/purple_500"
+                android:textSize="18sp" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

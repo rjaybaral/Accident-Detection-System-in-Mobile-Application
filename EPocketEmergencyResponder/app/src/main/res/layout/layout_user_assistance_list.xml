@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="8dp"
+        >
+        <LinearLayout
+            android:id="@+id/clickMe"
+            android:clickable="true"
+            android:background="?android:selectableItemBackground"
+            android:padding="13dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="19sp"
+                android:textColor="#2E2E2E"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="I need assistance right now because I'm in danger"
+                />
+            <TextView
+                android:id="@+id/fullname_text"
+                android:layout_marginTop="10dp"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Fullname      : "
+                />
+            <TextView
+                android:id="@+id/contact_text"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Contact No  : "
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text="Address        :  "
+                    />
+
+                <TextView
+                    android:id="@+id/current_location_address_text"
+                    android:layout_marginTop="5dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins"
+                    android:text=""
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/location_text"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Location       :  "
+                />
+            <TextView
+                android:id="@+id/distance_text"
+                android:layout_marginTop="5dp"
+                android:textSize="13sp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:text="Distance       :  "
+                />
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/s4"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:src="@drawable/top_bg2" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:fontFamily="@font/abeezee"
+            android:gravity="center"
+            android:text="RIDE SAFE"
+            android:textColor="@color/s3"
+            android:textSize="60sp"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:gravity="center"
+            android:letterSpacing="0.15"
+            android:text="Emergency Application"
+            android:textColor="@color/s3"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/profileBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="95dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/bg_gray_round"
+            android:fontFamily="@font/poppins_bold"
+            android:padding="19dp"
+            android:text="PROFILE"
+            android:textSize="19.5sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/userRequestBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/bg_gray_round"
+            android:fontFamily="@font/poppins_bold"
+            android:padding="11dp"
+            android:text="USER REQUEST\nASSISTANCE LIST"
+            android:textSize="17.5sp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="35dp"
+            android:background="@drawable/bg_gray_round"
+            android:fontFamily="@font/poppins_bold"
+            android:padding="19dp"
+            android:text="LOGOUT"
+            android:layout_marginBottom="10dp"
+            android:textSize="19.5sp" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/actionRescuerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:src="@drawable/otw_icon"
+        app:tint="@color/white" />
+
+</RelativeLayout>

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RescuerActionWithMapActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:background="@color/s4"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardBackgroundColor="@color/s4"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/back_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="7dp"
+                    android:src="@drawable/arrow_back"
+                    app:tint="@color/s1"/>
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:textColor="@color/white"
+                android:layout_width="0dp"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:layout_marginTop="2.5dp"
+                android:layout_marginLeft="20dp"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Rescue Operation"
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardBackgroundColor="@color/s4"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="0dp">
+                <ImageView
+                    android:id="@+id/done_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="10dp"
+                    android:src="@drawable/done_rescue_icon"
+                    app:tint="@color/s1" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardBackgroundColor="@color/s4"
+                android:layout_marginRight="5dp"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="0dp">
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/message_button"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="10dp"
+                        android:src="@drawable/message_icon"
+                        app:tint="@color/s1" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/count_message_notif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="4.5dp"
+                        android:layout_marginRight="7dp"
+                        android:background="@drawable/bg_red_notif"
+                        android:fontFamily="@font/abeezee"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingBottom="0dp"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#4E4E4E"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <fragment
+                android:id="@+id/map"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/bg_transparent_for_map"
+                >
+                <LinearLayout
+                    android:clickable="true"
+                    android:background="?android:selectableItemBackground"
+                    android:id="@+id/clickMe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="24dp"
+                        app:cardElevation="0dp">
+
+                        <ImageView
+                            android:id="@+id/profileImage"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:src="@drawable/user_icon_black"
+                            android:transitionName="image1" />
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/fullname_text"
+                            android:textColor="#232323"
+                            android:layout_width="match_parent"
+                            android:textSize="13sp"
+                            android:layout_marginLeft="10dp"
+                            android:maxLines="1"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text=""
+                            />
+                        <TextView
+                            android:id="@+id/address_text"
+                            android:textColor="#232323"
+                            android:layout_width="match_parent"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="10dp"
+                            android:maxLines="2"
+                            android:ellipsize="end"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/poppins"
+                            android:text=""
+                            />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

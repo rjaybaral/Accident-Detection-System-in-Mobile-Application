@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactListActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/back_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="7dp"
+                    android:src="@drawable/arrow_back" />
+            </androidx.cardview.widget.CardView>
+            <TextView
+                android:textColor="#232323"
+                android:layout_width="0dp"
+                android:textSize="18sp"
+                android:layout_weight="1"
+                android:layout_marginTop="2.5dp"
+                android:layout_marginLeft="10dp"
+                android:maxLines="1"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="Emergency Contact"
+                />
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                app:cardBackgroundColor="@color/white"
+                android:layout_marginRight="5dp"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="0dp">
+                <RelativeLayout
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    >
+
+                    <ImageView
+                        android:id="@+id/add_emergency_contact"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="?android:selectableItemBackground"
+                        android:clickable="true"
+                        android:padding="10dp"
+                        android:src="@drawable/add_contacct" />
+
+                    <TextView
+                        android:visibility="gone"
+                        android:id="@+id/count_message_notif"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="4.5dp"
+                        android:layout_marginRight="7dp"
+                        android:background="@drawable/bg_red_notif"
+                        android:fontFamily="@font/abeezee"
+                        android:paddingLeft="6dp"
+                        android:paddingRight="6dp"
+                        android:paddingBottom="0dp"
+                        android:text="0"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CDCDCD"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerView"
+            />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "667677071313",
+    "firebase_url": "https://accidentdetectionsystem-7ca5b-default-rtdb.firebaseio.com",
+    "project_id": "accidentdetectionsystem-7ca5b",
+    "storage_bucket": "accidentdetectionsystem-7ca5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:667677071313:android:2d4d5844cd30920af5b2f0",
+        "android_client_info": {
+          "package_name": "com.example.epocketemergency"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "667677071313-v0nf5gnd5tdo8epnct6n6cfccta98uuq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.epocketemergency",
+            "certificate_hash": "2dfbb98110e37d3ad36b40b2d29ad73ddc6ab445"
+          }
+        },
+        {
+          "client_id": "667677071313-h1te8u2d6j5np9o809v8ekf9q3pp22a4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBncLSBlC4k6TbuYhy39gHgMcQWxDteylk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "667677071313-h1te8u2d6j5np9o809v8ekf9q3pp22a4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

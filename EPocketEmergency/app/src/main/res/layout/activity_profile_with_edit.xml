@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8F8"
+    tools:context=".ProfileWithEditActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        android:scrollbarThumbVertical="@null">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                app:cardBackgroundColor="#F8F8F8"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/back_button"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="7dp"
+                    android:src="@drawable/arrow_back" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="113dp"
+                android:layout_height="113dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="-30dp"
+                app:cardBackgroundColor="@color/primary_pink"
+                app:cardCornerRadius="56.5dp">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="@color/black"
+                    app:cardCornerRadius="55dp">
+
+                    <ImageView
+                        android:id="@+id/profileImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:transitionName="image1" />
+                </androidx.cardview.widget.CardView>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                app:cardBackgroundColor="#F8F8F8"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:id="@+id/choosePhotoBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="7dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="7dp">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/edit_icon_pink"
+                        app:tint="@color/primary_pink" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="EDIT MY PROFILE"
+                        android:textColor="@color/primary_pink"
+                        android:textSize="18dp"
+
+                        />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="FIRSTNAME"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+
+                />
+
+            <EditText
+                android:id="@+id/firstname_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:inputType="text|textCapWords"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="LASTNAME"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+
+                />
+
+            <EditText
+                android:id="@+id/lastname_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:inputType="text|textCapWords"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="BIRTHDAY"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp">
+
+                <EditText
+                    android:id="@+id/birthday_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text|textCapWords"
+                    android:maxLines="1" />
+
+                <ImageView
+                    android:id="@+id/r1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:background="?android:selectableItemBackground"
+                    android:clickable="true"
+                    android:padding="4dp"
+                    android:src="@drawable/calendar_icon" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="CONTACT NO"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+
+                />
+
+            <EditText
+                android:id="@+id/contact_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:inputType="number"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="EMAIL"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+
+                />
+
+            <EditText
+                android:id="@+id/email_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:inputType="text"
+                android:maxLines="1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="ADDRESS"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+
+                />
+
+            <EditText
+                android:id="@+id/address_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:inputType="textCapWords"
+                android:maxLines="2" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="EMERGENCY CONTACT"
+                android:textColor="@color/black"
+                android:textSize="15dp"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp">
+
+                <EditText
+                    android:clickable="true"
+                    android:background="?android:selectableItemBackground"
+                    android:id="@+id/emergency_contact_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:cursorVisible="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:inputType="text|textCapWords"
+                    android:maxLines="1"
+                    android:text="" />
+
+                <ImageView
+                    android:id="@+id/add_emergency_contact"
+                    android:clickable="true"
+                    android:background="?android:selectableItemBackground"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:padding="4dp"
+                    android:src="@drawable/add_contact_person" />
+
+
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/updateBtn"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_primary_color_round"
+                android:text="UPDATE INFORMATION"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/poppins"
+                android:gravity="center_horizontal"
+                android:letterSpacing="0.02"
+                android:text="For enhance account security, keep your account information up to date."
+                android:textColor="@color/black"
+                android:textSize="14.5sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
